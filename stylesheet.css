@@ -1,5 +1,110 @@
+body{
+    margin:0px;
+    background-color:black;
+}
+
+#xi_slogo{
+    z-index:2;
+    position:fixed;
+    margin:25px 0px 0px 50px;
+    display:auto;
+    width:85px;
+    height:46px;
+}
+
+#xi_logo{
+    z-index:2;
+    position:absolute;
+    margin:250px 0px 0px 513px;
+    display:auto;
+    width:341px;
+    height:191px;
+}
+
+#xi_map{
+    z-index:2;
+    position:absolute;
+    margin:500px 0px 0px 630px;
+    display:auto;
+    width:105px;
+    height:85px;
+}
+
+#xi_pic{
+    z-index:1;
+    position:absolute;
+    margin-top:-30px;
+    width:1366px;
+    height:765px;
+}
+
+table{
+    margin:0px;
+}
+
+img{
+    margin:0px;
+}
+
+#div_first{
+    position:relative;
+    width:1366px;
+    height:765px;
+}
+
+#div_second{
+    position:relative;
+}
+
+
+table{
+    z-index:1;
+    position:absolute;
+    margin:0px;
+    width:1366;
+    height:645;
+    background-color:black;
+}
+
+#text{
+    z-index:2;
+    position:absolute;
+    margin:160px 0px 0px 230px;
+    display:auto;
+    width:500px;
+    height:85px;
+}
 p{
-    color:Gray;
-      font-family:Arial;
-        font-size:40px;
-	  }
+    font-size:50px;
+    font-weight:bold;
+    color:#515151;
+}
+
+#line{
+    z-index:2;
+    position:absolute;
+    margin:345px 0px 0px 520px;
+    display:auto;
+    width:480px;
+    height:5px;
+    background-color:#515151;
+}
+
+span{
+    z-index:2;
+    position:absolute;
+    margin:290px 0px 0px 810px;
+    display:auto;
+    font-size:35px;
+    font-weight:bold;
+    color:#515151;
+}
+
+#location{
+    z-index:2;
+    position:absolute;
+    margin:225px 0px 0px 965px;
+    display:auto;
+    width:65px;
+    height:125px;
+}

@@ -1,0 +1,57 @@
+body{
+    margin:0px;
+    background-color:black;
+}
+
+#xi_slogo{
+    z-index:2;
+    position:fixed;
+    margin:25px 0px 0px 50px;
+    display:auto;
+    width:85px;
+    height:46px;
+}
+
+.backpic{
+    z-index:1;
+    width:1366px;
+    height:645px;
+}
+
+#text{
+    z-index:2;
+    position:fixed;
+    top:130px;
+    right:140px;
+    display:auto;
+    width:900px;
+    height:85px;
+    text-align:right;
+}
+p{
+    font-size:35px;
+    font-weight:bold;
+    color:#f2f2f2;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+#div_first{
+    position:relative;
+    width:1366px;
+    height:645px;
+}
+
+#home{
+    z-index:2;
+    position:absolute;
+    margin:570px 0px 0px 660px;
+    display:auto;
+    width:55px;
+    height:55px;
+}
+
+#lastpic{
+    z-index:1;
+    position:absolute;
+}
