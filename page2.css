@@ -23,10 +23,10 @@ body{
     position:fixed;
     top:130px;
     right:140px;
-    display:auto;
     width:900px;
     height:85px;
     text-align:right;
+    display:none;
 }
 p{
     font-size:35px;

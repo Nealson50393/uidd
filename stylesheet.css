@@ -4,17 +4,17 @@ body{
 }
 
 #xi_slogo{
-    z-index:2;
+    z-index:3;
     position:fixed;
     margin:25px 0px 0px 50px;
-    display:auto;
+    display:none;
     width:85px;
     height:46px;
 }
 
 #xi_logo{
     z-index:2;
-    position:absolute;
+    position:fixed;
     margin:250px 0px 0px 513px;
     display:auto;
     width:341px;
@@ -66,11 +66,25 @@ table{
     background-color:black;
 }
 
+#halfmap{
+    z-index:3;
+    position:absolute;
+    margin:79px 0px 0px 171px;
+    background-color:black;
+}
+
+#topmap{
+    z-index:3;
+    position:absolute;
+    margin:79px 0px 0px 171px;
+    background-color:black;
+}
+
 #text{
-    z-index:2;
+    z-index:4;
     position:absolute;
     margin:160px 0px 0px 230px;
-    display:auto;
+    display:none;
     width:500px;
     height:85px;
 }
@@ -83,9 +97,9 @@ p{
 #line{
     z-index:2;
     position:absolute;
-    margin:345px 0px 0px 520px;
+    margin:345px 0px 0px 176px;
     display:auto;
-    width:480px;
+    width:412px;
     height:5px;
     background-color:#515151;
 }
@@ -93,7 +107,7 @@ p{
 span{
     z-index:2;
     position:absolute;
-    margin:290px 0px 0px 810px;
+    margin:290px 0px 0px 488px;
     display:auto;
     font-size:35px;
     font-weight:bold;
@@ -101,9 +115,9 @@ span{
 }
 
 #location{
-    z-index:2;
+    z-index:4;
     position:absolute;
-    margin:225px 0px 0px 965px;
+    margin:225px 0px 0px 556px;
     display:auto;
     width:65px;
     height:125px;

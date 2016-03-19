@@ -4,15 +4,39 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="page2.css"/>
 		<title>page2</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<script>
+            $(document).ready(function(){
+
+                <!-- scroll to trigger ********************************************************-->
+                $triggered_times = 0;
+                $(window).on('scroll', function() {
+                        var y_scroll_pos = window.pageYOffset;
+                        var scroll_pos_test = 1;   // set to whatever you want it to be
+
+                        if(y_scroll_pos > scroll_pos_test && $triggered_times == 0 ) {
+                            //do your stuff over here
+                            $("#text").fadeIn(3000);
+                            //do your stuff over here
+                            $triggered_times = 1;   // to make sure the above action triggers only once
+                        }
+                 });
+                 <!--*************************************************************************-->
+
+            });
+		</script>
+
+
 	</head>
 	<body>
         <a href="index.htm"><img id="xi_slogo" src="documents-export-2016-03-15\icons\dsadasdada.png"/></a>
         <div id="text">
-            <p>è¥¿å¸‚å ´ä½æ–¼æ­£èˆˆè¡—èˆ‡åœ‹è¯è¡—çš„äº¤æ¥è™•ï¼Œ</p>
-            <p>èˆŠåç‚ºå¤§èœå¸‚ï¼Œ</p>
-            <p>ä¸€åˆ°å‡æ—¥ï¼Œäººæ½®ç¸½æœƒæŠŠå°å°çš„æ­£èˆˆè¡—æ“ å¾—æ°´æ´©ä¸é€šï¼Œ</p>
-            <p>è€Œè¥¿å¸‚å ´å°±åœ¨é€™äº›å‘¨åœçš„è€å­—è™Ÿèˆ‡æ–°åº—å®¶çš„åŠªåŠ›ä¸‹ï¼Œ</p>
-            <p>ç¹¼çºŒæ´»èºã€‚</p>
+            <p>¦è¥«³õ¦ì©ó¥¿¿³µó»P°êµØµóªº¥æ±µ³B¡A</p>
+            <p>ÂÂ¦W¬°¤jµæ¥«¡A</p>
+            <p>¤@¨ì°²¤é¡A¤H¼éÁ`·|§â¤p¤pªº¥¿¿³µóÀ½±o¤ô¬ª¤£³q¡A</p>
+            <p>¦Ó¦è¥«³õ´N¦b³o¨Ç©P³òªº¦Ñ¦r¸¹»P·s©±®aªº§V¤O¤U¡A</p>
+            <p>Ä~Äò¬¡ÅD¡C</p>
         </div>
 
 

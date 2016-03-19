@@ -4,26 +4,121 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<title>Home</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://github.com/tbem/jquery.line"></script>
+
+
+		<script>
+		    $(document).ready(function(){
+
+                <!-- click to scroll to *****************************************************-->
+                $('a[href^="#div_second"]').on('click',function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                    window.location.hash = target;
+                    });
+                });
+                <!--*************************************************************************-->
+
+                <!-- scroll to trigger ********************************************************-->
+                $triggered_times = 0;
+                $(window).on('scroll', function() {
+                        var y_scroll_pos = window.pageYOffset;
+                        var scroll_pos_test1 = 1;   // set to whatever you want it to be 16:100px
+                        var scroll_pos_test2 = 176;   // set to whatever you want it to be 16:100px
+
+
+                        if(y_scroll_pos > scroll_pos_test1 && $triggered_times == 0 ) {
+
+                            //do your stuff over here
+                            $("#xi_logo").animate({
+                                left: '-463px',
+                                top:'-225px',
+                                height: '46px',
+                                width: '85px'
+                            },1000);
+
+                            $("#xi_slogo").delay(1030).fadeIn(0);
+                            $("#xi_logo").fadeOut(0);
+                            //do your stuff over here
+
+                            $triggered_times = 1;   // to make sure the above action triggers only once
+                        }
+
+                        if(y_scroll_pos > scroll_pos_test2 && $triggered_times == 1 ) {
+
+                            //do your stuff over here
+                            $("#text").fadeIn(2000);
+
+                            $("#line").animate({left: '412px'},2000);
+                            $("#location").animate({left: '412px'},2000);
+                            $("span").animate({left: '322px'},2000);
+                            //do your stuff over here
+
+                            $triggered_times = 2;   // to make sure the above action triggers only once
+                        }
+                 });
+                 <!--*************************************************************************-->
+
+
+                $("#location").mouseenter(function(){
+                        $("#location").fadeTo(500, 0.5);
+                });
+                $("#location").mouseleave(function(){
+                        $("#location").fadeTo(500, 1);
+                });
+
+                $("span").mouseenter(function(){
+                        $("span").fadeTo(500, 0.5);
+                });
+                $("span").mouseleave(function(){
+                        $("span").fadeTo(500, 1);
+                });
+
+
+            });
+
+
+		</script>
+
+
 	</head>
 	<body>
         <a href="index.htm"><img id="xi_slogo" src="documents-export-2016-03-15\icons\dsadasdada.png"/></a>
+        <a href="index.htm"><div id="index_link""></div></a>
+
         <div id="div_first">
             <img id="xi_logo" src="documents-export-2016-03-15\icons\dsadasdada.png"/>
             <img id="xi_pic" src="documents-export-2016-03-15\original photos(edited)\in\1...jpg"/>
-            <a src=""><img id="xi_map" src="documents-export-2016-03-15\icons\noun_96666_cc white.png"/></a>
+            <a href="#div_second"><img id="xi_map" src="documents-export-2016-03-15\icons\noun_96666_cc white.png"/></a>
         </div>
         <div id="div_second">
             <table width="1366" height="645" bgcolor="black">
                 <td align="center">
                     <img src="documents-export-2016-03-15\1366 x 645\mapss 1366 shadow.png"
-                    width="1093" height="516"  />
+                    width="1050" height="525"  />
                 </td>
             </table>
+
+
+            <img id="halfmap" src="documents-export-2016-03-15\1366 x 645\mapss 417-484 shadow.png"/>
+
+            <img id="topmap" src="documents-export-2016-03-15\1366 x 645\mapss 602-267 shadow.png"/>
+
             <div id="text">
-                <p>ÂæûÂÖßÂà∞Â§ñ</p><p>Êñ∞ÁöÑÊñπÂºè</p><p>È´îÈ©ó‰∏ç‰∏ÄÊ®£ÁöÑË•øÂ∏ÇÂ†¥</p>
+                <p>±q§∫®Ï•~</p><p>∑s™∫§Ë¶°</p><p>≈È≈Á§£§@ºÀ™∫¶Ë•´≥ı</p>
             </div>
+
             <div id="line"></div>
-            <a href="page1.htm"><p><span>ÈÄ≤ÂÖ•È´îÈ©ó</span></p></a>
+
+            <a href="page1.htm"><p><span>∂i§J≈È≈Á</span></p></a>
             <a href="page1.htm"><img id="location" src="documents-export-2016-03-15\icons\noun_32161_cc lol.png"/></a>
         </div>
 	</body>

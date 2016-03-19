@@ -23,7 +23,7 @@ body{
     position:fixed;
     top:120px;
     left:110px;
-    display:auto;
+    display:none;
     width:850px;
     height:85px;
 }
